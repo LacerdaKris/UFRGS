@@ -8,12 +8,12 @@ if c == "+":
 elif c == "*":
     resultado = a*b
 elif c == "-":
-    if d == 'r' or 'R':
+    if d == 'r':
         resultado = b-a
     else:
         resultado = a-b
 elif c == "/":
-    if d == 'r' or 'R':
+    if d == 'r':
         resultado = b/a
     else:
         resultado = a/b
