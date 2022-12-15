@@ -1,16 +1,16 @@
 try:
     nota = float(input("Digite a nota: "))
-    assert 0 < nota < 100
-    if 100 >= nota >= 90:
-        print("A")
+    assert 0 <= nota <= 100
+    if nota >= 90:
+        print("Conceito: A")
     elif 90 > nota >= 80:
-        print("B")
+        print("Conceito: B")
     elif 80 > nota >= 70:
-        print("C")
+        print("Conceito: C")
     elif 70 > nota >= 60:
-        print("D")
+        print("Conceito: D")
     else:
-        print("F")
-    
+        print("Conceito: F")
+
 except:
     print("Nota inválida")
