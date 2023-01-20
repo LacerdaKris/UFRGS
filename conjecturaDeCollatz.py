@@ -1,12 +1,15 @@
 try:
-    n = int(input())
-    print("Conjectura de Collatz para N =\t", n)
-    while n > 1:
-      if n % 2 == 0:
-        n /= 2
+  N = int(input())
+  if N <= 1:
+    print('Entrada inválida')
+  else:
+    print(f'Conjectura de Collatz para N = {N}')
+    while N > 1:
+      if N % 2 == 0:
+        N = int(N/2)
       else:
-        n = 3*n+1
-      print(n, "\t", n*"#")
+        N = int(3*N+1)
+      print(N, '\t', N*'#', sep='')
 
-except ValueError:
-    print("Entrada inválida")
+except:
+  print('Entrada inválida')
