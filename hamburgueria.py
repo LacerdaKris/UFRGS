@@ -34,7 +34,7 @@ elif duplo < simples:
 else:
   maisVendido = "Empate"
 
-print(f"- Relatório da Venda -")
+print("- Relatório da Venda -")
 print(f"Quantidade de bebidas vendidas: {bebidas}")
 print(f"Valor total: R$ {total:.2f}")
 print(f"Lucro obtido: R$ {total*0.3:.2f}")
