@@ -1,11 +1,10 @@
 #refri = 5.0 suco = 8.5 hamburguerSimples = 25.8 hamburguerDuplo = 28.4 batatas = 15.0
 
 bebidas = 0
-total = 0
-lucro = 0
-fritas = "Não"
 simples = 0
 duplo = 0
+fritas = "Não"
+total = 0
 codigo = int(input())
 while 6 > codigo > 0:
   if codigo == 1:
@@ -25,7 +24,7 @@ while 6 > codigo > 0:
     total += 15
   codigo = int(input())
 
-maisVendido = ""
+maisVendido = "Nenhum"
 if duplo > simples:
   maisVendido = "Duplo"
 elif duplo & simples == 0:
