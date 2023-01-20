@@ -1,8 +1,4 @@
-refri = 5.0
-suco = 8.5
-hamburguerSimples = 25.8
-hamburguerDuplo = 28.4
-batatas = 15.0
+#refri = 5.0 suco = 8.5 hamburguerSimples = 25.8 hamburguerDuplo = 28.4 batatas = 15.0
 
 bebidas = 0
 total = 0
@@ -14,28 +10,31 @@ codigo = int(input())
 while 6 > codigo > 0:
   if codigo == 1:
     bebidas += 1
-    total += refri
+    total += 5
   elif codigo == 2:
     bebidas += 1
-    total += suco
+    total += 8.5
   elif codigo == 3:
     simples += 1
-    total += hamburguerSimples
+    total += 25.8
   elif codigo == 4:
     duplo += 1
-    total += hamburguerDuplo
+    total += 28.4
   elif codigo == 5:
     fritas = "Sim"
-    total += batatas
+    total += 15
   codigo = int(input())
 
 maisVendido = ""
 if duplo > simples:
   maisVendido = "Duplo"
-elif duplo == simples:
-  maisVendido = "Empate"
-else:
+elif duplo & simples == 0:
+  maisVendido = "Nenhum"
+elif duplo < simples:
   maisVendido = "Simples"
+else:
+  maisVendido = "Empate"
+
 print(f"- Relatório da Venda -")
 print(f"Quantidade de bebidas vendidas: {bebidas}")
 print(f"Valor total: R$ {total:.2f}")
