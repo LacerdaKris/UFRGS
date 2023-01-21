@@ -1,3 +1,4 @@
+#O enunciado do exercício pedia pra digitar códigos de 1 a 6 em sequencia para os itens do pedido, e emitir relatório ao digitar 0 (zero)
 #refri = 5.0 suco = 8.5 hamburguerSimples = 25.8 hamburguerDuplo = 28.4 batatas = 15.0
 
 try:
@@ -7,7 +8,7 @@ try:
   fritas = "Não"
   total = 0
   maisVendido = ""
-  codigo = int(input())
+  codigo = int(input("Digite o código: "))
   while codigo != 0:
     if codigo == 1:
       bebidas = bebidas+1
